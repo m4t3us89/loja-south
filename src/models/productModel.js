@@ -1,6 +1,10 @@
 import mongoose from '../database/index.js'
 
-const ProductSchema = new mongoose.Schema({
+import mongoosePaginate from 'mongoose-paginate'
+
+const db = await mongoose()
+
+const ProductSchema = new db.Schema({
     name: {
         type: String,
         required: true,
@@ -12,6 +16,7 @@ const ProductSchema = new mongoose.Schema({
     }
 })
 
-const Product  = mongoose.model('Product', ProductSchema)
+ProductSchema.plugin(mongoosePaginate)
+const Product  = db.model('Product', ProductSchema)
 
 export default Product

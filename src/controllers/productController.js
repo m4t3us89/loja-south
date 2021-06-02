@@ -3,11 +3,12 @@ import { createProduct, listProduct, showProduct, deleteProduct, updateProduct} 
 export async function list(req,res, next){
 
     try{
-
-        const products = await listProduct()
+        const { offset, limit } = req.query
+   
+        const products = await listProduct(offset, limit)
 
         res.status(200).json({
-            message: 'list success',
+            message: 'listed success',
             data: products
         })
     }catch(err){
@@ -26,7 +27,7 @@ export async function show(req,res, next){
         const product = await showProduct(id)
 
         res.status(200).json({
-            message: 'show success',
+            message: 'showed success',
             data : product
         })
     }catch(err){
