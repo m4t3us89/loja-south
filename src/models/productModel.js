@@ -7,7 +7,7 @@ const db = await mongoose()
 const ProductSchema = new db.Schema({
     name: {
         type: String,
-        required: [true, 'O nome do produto é obrigatório.' ]
+        required: [true, 'O nome do produto é obrigatório.' ],
         lowercase: true
     },
     createdAt:{
