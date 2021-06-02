@@ -7,14 +7,14 @@ export default function(...allowed){
 
         const profile = userCredentials.profile
 
-        if(profile == 'M') next() //gerente tem acesso a todos os recursos
+        if(profile == 'M') return next() //gerente tem acesso a todos os recursos
 
-        if(!allowed.includes(profile)) next({statusCode:401})
+        if(!allowed.includes(profile)) return next({statusCode:401})
 
         if(profile !== 'C')//para outros papeis, verifico se pode acessar o recurso atraves do verbo da requisição
-            if(!userCredentials.can.includes(method)) next({statusCode:401})
+            if(!userCredentials.can.includes(method)) return next({statusCode:401})
         
-        next()
+        return next()
 
     }
 }
