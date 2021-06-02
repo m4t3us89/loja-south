@@ -1,12 +1,12 @@
-## Loja South API
+# Loja South API
 
-# Instalação
+## Instalação
 npm i
 
 npm run dev
 
 
-# Documentação
+## Documentação
 **Bse url:  https://loja-south.herokuapp.com/**
 
 ```sh
