@@ -11,7 +11,7 @@ npm run dev
 
 
 
-| Perfil  |        Token Acesso    |
+| Papel   |        Token Acesso    |
 | ------  |          ------        |
 | Gerente | hlQ7dN5W5MwtEMj2OIa17a |
 | Cliente | hlQ7dN5W5MwtEMj2OIa17b |
