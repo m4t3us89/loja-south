@@ -9,7 +9,7 @@ npm run dev
 ## Documentação
 **Bse url:  https://loja-south.herokuapp.com/**
 
-
+"Em um possível cenário de um serviço de autenticação."
 
 | Papel   |        Token Acesso    |
 | ------  |          ------        |
