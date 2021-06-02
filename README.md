@@ -11,8 +11,8 @@ npm run dev
 
 ```sh
 
-| Perfil |  Token Acesso |
-| ------ | ------ |
+| Perfil  |        Token Acesso    |
+| ------  |          ------        |
 | Gerente | hlQ7dN5W5MwtEMj2OIa17a |
 | Cliente | hlQ7dN5W5MwtEMj2OIa17b |
 
