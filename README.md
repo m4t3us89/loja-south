@@ -16,7 +16,7 @@ npm run dev
 | Gerente | hlQ7dN5W5MwtEMj2OIa17a |
 | Cliente | hlQ7dN5W5MwtEMj2OIa17b |
 
-**Para todas as requisições é necessário informar o token de acesso (Authorization).**
+**Para todas as requisições é necessário informar o token de acesso no cabeçalho (Authorization).**
 
 **Produto**
 | Método  |   Path   | Body | Query |
